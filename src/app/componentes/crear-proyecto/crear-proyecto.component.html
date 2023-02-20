@@ -1,0 +1,89 @@
+
+<section class="cont-crear-proyecto">
+    <div class="crear-proyecto-header">
+        <h2 class="crear-proyecto-titulo">Crear proyecto</h2>
+    </div>
+    <div class="crear-proyecto-body">
+        <form #formularioProyecto="ngForm" (ngSubmit)="onSubmit(formularioProyecto)">
+            <div class="cont-campos">
+                <label class="contacto-label" for="nombre">Nombre 
+                    <span class="contacto-msj-error" *ngIf="nombre.touched && !nombre.valid">*Este campo es obligatorío</span>
+                </label>
+                <input type="text" 
+                    name="nombre" 
+                    #nombre="ngModel" 
+                    [(ngModel)]="proyecto.nombre" 
+                    class="contacto-input" 
+                    required
+                    autocomplete="off"
+                    [style.border]="nombre.touched && !nombre.valid ? 'solid red 2px':'' ">
+            </div>    
+            <div class="cont-campos">
+                <label class="contacto-label" for="categoria">Categoria
+                    <span class="contacto-msj-error" *ngIf="categoria.touched && !categoria.valid">*Este campo es obligatorío</span>
+                </label>
+                <input type="text" 
+                    name="categoria" 
+                    #categoria="ngModel" 
+                    [(ngModel)]="proyecto.categoria" 
+                    class="contacto-input" 
+                    required
+                    autocomplete="off"
+                    [style.border]="categoria.touched && !categoria.valid ? 'solid red 2px':'' ">
+            </div>
+            <div class="cont-campos">
+                <label class="contacto-label" for="lenguajes">Lenguajes
+                    <span class="contacto-msj-error" *ngIf="lenguajes.touched && !lenguajes.valid">*Este campo es obligatorío</span>
+                </label>
+                <input type="text" 
+                    name="lenguajes"
+                    #lenguajes="ngModel"
+                    [(ngModel)]="proyecto.lenguajes"
+                    class="contacto-input"
+                    required
+                    autocomplete="off"
+                    [style.border]="lenguajes.touched && !lenguajes.valid ? 'solid red 2px':'' ">
+            </div>
+            <div class="cont-campos">
+                <label class="contacto-label" for="creacion">Fecha de creación
+                    <span class="contacto-msj-error" *ngIf="creacion.touched && !creacion.valid">*Este campo es obligatorío</span>
+                </label>
+                <input type="text" 
+                    name="creacion"
+                    #creacion="ngModel"
+                    [(ngModel)]="proyecto.creacion"
+                    class="contacto-input" 
+                    required
+                    autocomplete="off"
+                    disabled="on"
+                    [style.border]="creacion.touched && !creacion.valid ? 'solid red 2px':'' ">
+            </div>
+            <div class="cont-campos">
+                <label class="contacto-label" for="descripcion">Descripción
+                    <span class="contacto-msj-error" *ngIf="descripcion.touched && !descripcion.valid">*Este campo es obligatorío</span>
+                </label>
+                <textarea type="text" 
+                    name="descripcion"
+                    #descripcion="ngModel"
+                    [(ngModel)]="proyecto.descripcion"
+                    class="contacto-textarea" 
+                    required
+                    autocomplete="off"
+                    [style.border]="descripcion.touched && !descripcion.valid ? 'solid red 2px':'' "></textarea>
+            </div> 
+            <div class="cont-campos">
+                <label class="contacto-label" for="imgProyecto">Imagen del proyecto
+                </label>
+                <input type="file"
+                    name="imgProyecto"
+                    #imagen
+                    [(ngModel)]="proyecto.imagen"
+                    class="contacto-input-img"
+                    >
+            </div> 
+            <div class="cont-campos">
+                <button id="btn-agregar-proyecto" type="submit" [disabled]="!formularioProyecto.form.valid">Agregar</button>
+            </div>
+        </form>
+    </div>
+</section>

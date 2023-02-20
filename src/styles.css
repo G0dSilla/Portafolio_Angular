@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+    --color-principal: #024089;
+    --color-letra: #f49f1c;
+    --ligth-bg: #feeffe;
+    --dark-bg: #040404;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-principal);
+}
+
+.footer-icon svg{
+    width: 100% !important;
+    height: 100% !important;
+    color: #eee;
+    transition: 0.5s;
+}
+
+.footer-icon svg:hover{
+    transform: scale(1.2,1.2);
+    transition: 0.5s;
+    color: #222;
+}

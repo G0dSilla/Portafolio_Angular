@@ -1,0 +1,101 @@
+
+.cont-crear-proyecto{
+    border: none;
+    height: auto;
+    max-height: 700px;
+    margin: 30px 50px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 1px 1px 12px 4px rgba(0,0,0,0.8);
+}
+
+.crear-proyecto-header{
+    height: 50px;
+    background-color: rgba(12, 140, 213, 0.8);
+    display: flex;
+    align-items: center;
+}
+
+.crear-proyecto-titulo{
+    margin: 0;
+    margin-left: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+}
+
+.crear-proyecto-body{
+    background-color: #fff;
+    height: 85%;
+    padding: 10px 20px;
+}
+
+.cont-campos{
+    border: none;
+}
+
+
+.contacto-label{
+    display: block;
+    margin-bottom: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contacto-msj-error{
+    color: rgb(220, 16, 16);
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.contacto-input{
+    margin-bottom: 12px;
+    height: 20px;
+    width: 300px;
+    padding: 3px;
+    outline: none;
+    border: solid 2px rgba(12, 140, 213, 1);
+    border-radius: 5px;
+}
+
+.contacto-textarea{
+    min-height: 100px;
+    min-width: 300px;
+    max-height: 100px;
+    max-width: 300px;
+    margin-bottom: 5px;
+    padding: 3px;
+    outline: none;
+    border: solid 2px rgba(12, 140, 213, 1);
+    border-radius: 5px;
+}
+
+.contacto-input-img{
+    margin-bottom: 15px;
+    height: 20px;
+    width: 300px;
+    padding: 3px;
+    outline: none;
+    border: none;
+    border-radius: 5px; 
+}
+
+#btn-agregar-proyecto{
+    margin-bottom: 15px;
+    width: 180px;
+    height: 40px;
+    background-color: rgba(12, 140, 213, 0.8);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+    border: solid 1px #ccc;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#btn-agregar-proyecto:hover{
+    background-color: rgb(7, 147, 98);
+}
+
+#btn-agregar-proyecto[disabled]{
+    background-color: rgb(119, 119, 119);
+}
