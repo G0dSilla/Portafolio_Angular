@@ -1,0 +1,24 @@
+<section class="contenedor">
+    <div class="cont-imagen">
+        <img class="imagen-proyecto" src="{{url+'obtenerImagenProyecto/'+proyecto.imagen}}"  *ngIf="proyecto.imagen" alt="">   
+    </div>
+    <div class="cont-info">
+        <h1 class="nombre-proyecto">{{proyecto.nombre}}</h1>
+        <p class="descripcion-proyecto">{{proyecto.descripcion}}</p>
+        <h2 class="creacion-proyecto">Creado en: {{proyecto.creacion}}</h2>
+        <p class="lenguajes-proyecto"> Lenjuages: {{proyecto.lenguajes}}</p>
+        <div class="cont-botones" *ngIf="confirmacion==false">
+            <p></p>
+            <button [routerLink]="['/editarProyecto/'+proyecto._id]" class="boton-proyecto" id="btnModificar">Modificar</button>
+            <button (click)="confirmarBorrado(true)" class="boton-proyecto" id="btnEliminar">Eliminar</button>
+        </div>
+
+        <div class="cont-botones" *ngIf="confirmacion">
+            <button (click)="confirmarBorrado(false)" class="boton-proyecto" id="btnModificar">Cancelar</button>
+            <button (click)="eliminarProyecto(proyecto._id)" class="boton-proyecto" id="btnEliminar">Eliminar</button>
+            <span>Estas seguro de borrar este proyecto</span>
+        </div>
+    </div>
+    
+</section>
+

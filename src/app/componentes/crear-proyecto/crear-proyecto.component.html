@@ -1,9 +1,12 @@
 
-<section class="cont-crear-proyecto">
+<section class="cont-crear-proyecto" *ngIf="proyecto">
     <div class="crear-proyecto-header">
-        <h2 class="crear-proyecto-titulo">Crear proyecto</h2>
+        <h2 class="crear-proyecto-titulo">{{titulo}}</h2>
     </div>
+    <hr>
+    <br>
     <div class="crear-proyecto-body">
+        <!-- Se crea el formulario con el nombre #formularioProyecto y llamando el metodo creado con ngSubmit pasando como parametro el form-->
         <form #formularioProyecto="ngForm" (ngSubmit)="onSubmit(formularioProyecto)">
             <div class="cont-campos">
                 <label class="contacto-label" for="nombre">Nombre 
@@ -55,7 +58,6 @@
                     class="contacto-input" 
                     required
                     autocomplete="off"
-                    disabled="on"
                     [style.border]="creacion.touched && !creacion.valid ? 'solid red 2px':'' ">
             </div>
             <div class="cont-campos">
@@ -74,15 +76,21 @@
             <div class="cont-campos">
                 <label class="contacto-label" for="imgProyecto">Imagen del proyecto
                 </label>
+                <span *ngIf="proyecto.imagen">
+                    <img src="{{url+'obtenerImagenProyecto/'+proyecto.imagen}}" alt="" style="width:150px;height:150px;"><br>
+                </span>
                 <input type="file"
                     name="imgProyecto"
                     #imagen
                     [(ngModel)]="proyecto.imagen"
                     class="contacto-input-img"
-                    >
+                    (change)="fileChangeEvent($event)"
+                    />
             </div> 
             <div class="cont-campos">
-                <button id="btn-agregar-proyecto" type="submit" [disabled]="!formularioProyecto.form.valid">Agregar</button>
+                <button id="btn-agregar-proyecto" type="submit" [disabled]="!formularioProyecto.form.valid" *ngIf="titulo=='Editar Proyecto'">Actualizar</button>
+                
+                <button id="btn-agregar-proyecto" type="submit" [disabled]="!formularioProyecto.form.valid" *ngIf="titulo=='Agregar Proyecto'">Agregar</button>
             </div>
         </form>
     </div>

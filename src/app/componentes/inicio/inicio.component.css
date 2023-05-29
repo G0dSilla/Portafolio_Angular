@@ -77,10 +77,10 @@
 
 .nombre{
     font-size: 40px;
-    text-align: center;
+    text-align: center;     
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
-    margin-top: 40px;
+    margin-top: 55px;
     color: var(--color-letra);
 }
 
@@ -98,7 +98,7 @@
     padding: 10px 60px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 18             px;
     color: #dde;
 }
 
@@ -120,7 +120,7 @@
     margin-top: 25px;
     margin-bottom: 25px;
     color: var(--color-letra)
- } 
+} 
 
 .contenedor-tecnologias{
     border: none;
@@ -181,7 +181,7 @@
 .cont-carta-frontend{
     border: none;
     margin: 2px;
-    padding: 16px 12px;
+    padding: 10px 15px;
 }
 
 .carta-frontend{
@@ -192,7 +192,7 @@
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    background-color: #e5e5e5;
+    background-color: #aee;
 }
 
 .frontend-cont-img{
@@ -212,26 +212,27 @@
 
 .frontend-img{
     height: 95%;
-    width: 98%;
+    width: 90%;
     border: solid 2px #222;
 
 }
 
 .frontend-titulo{
     font-family:'Courier New', Courier, monospace ;
-    margin-bottom: 8px;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
 /* Barra de progreso */
 .progress {
-    height: 20px;
+    height: 30px;
     width: 95%;
     /* border: 1px solid #428bca; */
     border-radius: 5px;
     background-color: #86d1f9;
     margin-bottom: 1px;
 }
- 
+
 .progress-bar {
     height: 100%;
     background: var(--color-principal);
@@ -240,7 +241,7 @@
     transition: 0.25s;
     border-radius: 5px;
 }
- 
+
 .progress-bar-text {
     margin-left: 10px;
     font-weight: bold;
@@ -286,14 +287,15 @@
 
 .carta-proyecto-mas{
     text-align: center;
+    height: 100%;
 }
 
 .carta-proyecto-titulo{
     display: block;
     position: relative;
     text-align: center;
-    /* bottom: -15px; */
-    margin-top: 20px;
+    top: 20px;
+    /* margin-top: 20px; */
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
@@ -301,8 +303,18 @@
     margin-bottom: 20px;
 }
 
-#carta-proyecto-btn{
-    height: 45px;
+.carta-proyecto-btn-on{
+    cursor: pointer;
+    position: relative;
+    bottom: -115px;
+    height: 50px;
     width: 95%;
+    background-color: rgba(0,0,0, 0.8);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 600;
 }
+
+
 

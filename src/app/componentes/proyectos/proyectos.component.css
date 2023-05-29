@@ -1,17 +1,16 @@
 
 .card-proyectos{
-    margin: 30px 20px;
-    border: solid 1px #777;
-    border-radius: 6px;
+    margin:30px;
+    border: solid 4px var(--color-letra);
     overflow: hidden;
 }
 
 .card-header{
-    background-color:  rgba(12, 140, 213, 0.8);
+    background-color:  transparent;
     height: 60px;
     display: flex;
     justify-content: space-between;
-    border-bottom: solid 1px #777;
+    border-bottom: solid 4px var(--color-letra);
 }
 
 .card-header-right{
@@ -23,9 +22,9 @@
     margin: 0;
     margin-left: 20px;
     align-self: center;
-    color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    color: var(--color-letra);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
 }
 
 #agregarProyecto{
@@ -48,16 +47,17 @@
 .cont-buscador{
     display: flex;
     align-items: center;
+    padding-right: 20px;
 }
 
 
 #buscadorProyecto{
     margin: 15px auto;
-    padding: 5px;
+    padding: 10px;
     margin-left: 15px;
-    font-size: 16px;
+    font-size: 18px;
     border: none;
-    border-radius: 6px 0px 0px 6px;
+    border-radius: 6px;
     outline: none;
     align-self: center;
 }
@@ -76,86 +76,88 @@
 
 .card-body{
     height: auto;
-    background-color: #eee;
-    padding: 20px;
+    background-color: transparent   ;
+    padding: 20px 70px;
 }
 
+/* Estilos contenedor de proyectos */
 .cont-proyectos{
-    border: solid 1px #999;
+    border: none;
     height: auto;
     display: grid;
     /* grid-template-columns: repeat(3, 33.33%);   */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
+    grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));  
 
 }
 
 .cont-card{
-    padding: 10px;
+    padding: 20px;
+    /* height: 100%; */
 }
 
 .card-proyecto{
-    border: solid 1px #999;
-    height: 300px;
+    border: solid 3px var(--color-letra);
+    height: 325px;
     display: flex;
-    flex-direction: column;
-
+    flex-direction: row;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    /* background-color: #aee; */
 }
 
-.card-proyecto-header{
-    height: 82%;
-    background-color: #eee;
+.card-proyecto:hover{
+    background-color: rgba(37, 37, 37, 0.37);
 }
 
-.card-proyecto-titulo{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 4px;
-    color: #fff;
-    text-align: center;
-    font-size: 30px;
-    position: relative;
-    top: -60%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-shadow: 1px;
+.card-proyecto-left{
+    flex: 1;
+    background-color: transparent;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .card-proyecto-img{
-    width: 100%;
-    height: 100%;
+    width: 85%;
+    height: 85%;
     color: rgba(37, 37, 37, 0.37);
+    border: solid 1px rgba(255, 255, 255);
 }
 
 
-.card-proyecto-body{
-    background-color: rgba(12, 140, 213, 0.8);;
-    height: 18%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.card-proyecto-btn{
-    height: 100%;
-    width: 99.9%;
-    border: none;
-    font-size: 16px;
+.card-proyecto-rigth{
     background-color: transparent;
-    cursor: pointer;
-    transition: 0.5s;
-    text-transform: uppercase;
+    flex: 2;
+    padding-left: 30px;
+    padding-top: 10px;
+
 }
 
-.card-proyecto-btn:hover{
-    background-color: #2dceeb;
-    font-size: 20px;
-    transition: 0.5s;
+.card-proyecto-titulo{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px 0px;
+    color: var(--color-letra);
 }
 
+.card-proyecto-descripcion{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+    width: 80%;
+    margin-bottom: 30px;
+    color: rgb(235, 229, 223);
+}
+
+.card-proyecto-lenguajes{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color: antiquewhite;
+}
 
 
 

@@ -1,0 +1,189 @@
+
+/* Estilos contenedor principal */
+.contenedor{
+    border: solid 4px var(--color-letra);
+    height: auto;
+    margin: 30px;
+    padding: 20px;
+
+}
+
+.contenedor-titulo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: var(--color-letra);
+    /* margin-left: 20px; */
+    margin: 10px 0px;
+    /* margin-bottom: 40px; */
+}
+
+/* Estilo Separador */
+.separador{
+    width: 95%;
+    height: 2px;
+    background-color: rgb(155, 155, 155);
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos experiencial laborales */
+.cont-experienciasLaboral{
+    border: none;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.cont-carta-expLaboral{
+    border: none;
+    padding: 10px;
+    height: 250px;
+    margin-bottom: 15px;
+}
+
+.carta-expLaboral{
+    border: solid 3px var(--color-letra);
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.carta-expLaboral-rigth{
+    flex: 1;
+    /* border: solid 2px white; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
+
+.carta-expLaboral-img{
+    width: 90%;
+    height: 85%;
+    border: solid 3px var(--color-letra);;
+    border-radius: 10px;
+}
+
+.carta-expLaboral-left{
+    flex: 2;
+    /* border: solid 3px white; */
+}
+
+.carta-expLaboral-titulo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 23px;
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 20px;
+    color: var(--color-letra);
+}
+
+.carta-expLaboral-duracion{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    margin: 0;
+    margin-top: 1px;
+    margin-left: 20px;
+    color: var(--color-letra);
+}
+
+.carta-expLaboral-descripcion{
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: aliceblue;
+}
+
+/* Estilos estudios */
+
+.cont-estudios{
+    border: none;
+    height: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.cont-estudios-academicos{
+    border: solid 1px white;
+    /* border-right: solid 3px var(--color-letra); */
+    padding: 15px 20px;
+}
+
+.cont-estudios-cursos{
+    border: solid 1px white;
+    padding: 15px 20px;
+    margin-left: 10px;
+}
+
+.cont-estudios-titulo{
+    margin: 0;
+    color: var(--color-letra);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.cont-cartas-estudios{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px white;
+    padding: 20px;
+    justify-content: center;;
+}
+
+.carta-estudio-academico, .carta-estudio-cursos{
+    border: solid 3px var(--color-letra);
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.carta-estudio-academico-left{
+    flex: 1;
+    display: flex;
+    padding: 20px;
+}
+
+.carta-academico-img{
+    border: solid 1px white;
+    width: 100%;
+    height: 100%;
+}
+
+.carta-estudio-academico-rigth{
+    flex: 2;
+}
+
+.carta-academico-nombre{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin: 0;
+    margin-top: 20px;
+    color: var(--color-letra);
+}
+
+.carta-academico-grado{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: aliceblue;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.carta-academico-titulo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin: 0;
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+/* .carta-academico-separador{
+    
+} */

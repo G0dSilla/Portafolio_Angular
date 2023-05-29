@@ -6,51 +6,30 @@
                 <button id="agregarProyecto">+</button>
             </a>
             <div class="cont-buscador">
-                <input id="buscadorProyecto" type="text">
-                <button id="btnBuscar">
-                    <fa-icon [icon]="icono1"></fa-icon>
-                </button>
+                <input id="buscadorProyecto" type="text" placeholder="Busca aquí">
             </div>
         </div>
     </div>
     <div class="card-body">
         <div class="cont-proyectos">
-            <div class="cont-card">
-                <div class="card-proyecto">
-                    <div class="card-proyecto-header">
-                        <img class="card-proyecto-img" src="https://c8.alamy.com/compes/prfdh8/codigo-de-programacion-de-futurista-y-grandes-conexiones-de-datos-y-modelos-de-red-ilustracion-3d-prfdh8.jpg" alt="">
+            <div class="cont-card" *ngFor="let proyecto of proyectos">
+                <a class="card-proyecto" href="" [routerLink]="['/verProyecto', proyecto._id]">
+                    <div class="card-proyecto-left">
+                        <img class="card-proyecto-img" src="{{url+'obtenerImagenProyecto/'+proyecto.imagen}}"  *ngIf="proyecto.imagen" alt="">   
+                    </div>
+                    <div class="card-proyecto-rigth">
                         <h3 class="card-proyecto-titulo">
-                            Fruitapp
+                            {{proyecto.nombre}}
                         </h3>
+                        <p class="card-proyecto-descripcion">
+                            {{proyecto.descripcion}}
+                        </p>
+                        <p class="card-proyecto-lenguajes">
+                            Lenguajes: {{proyecto.lenguajes}}
+                        </p>
                     </div>
-                    <div class="card-proyecto-body">
-                        <button class="card-proyecto-btn">
-                            Mostrar más
-                        </button>
-                    </div>
-                </div>
+                </a>
             </div>
-            <div class="cont-card">
-                <div class="card-proyecto">
-                    <div class="card-proyecto-header">
-    
-                    </div>
-                    <div class="card-proyecto-body">
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="cont-card">
-                <div class="card-proyecto">
-                    <div class="card-proyecto-header">
-    
-                    </div>
-                    <div class="card-proyecto-body">
-                        
-                    </div>
-                </div>
-            </div>
-            
         </div>
     </div>
 

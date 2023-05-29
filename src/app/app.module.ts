@@ -18,6 +18,8 @@ import {
   faMedium,
   faFacebook
 } from '@fortawesome/free-brands-svg-icons';
+import { VerProyectoComponent } from './componentes/ver-proyecto/ver-proyecto.component';
+import { EditarProyectoComponent } from './componentes/editar-proyecto/editar-proyecto.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import {
     ContactoComponent,
     ProyectosComponent,
     InicioComponent,
-    CrearProyectoComponent
+    CrearProyectoComponent,
+    VerProyectoComponent,
+    EditarProyectoComponent
   ],
   imports: [
     BrowserModule,

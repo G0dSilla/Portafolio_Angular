@@ -1,0 +1,115 @@
+
+.contenedor{
+    border: solid 1px #ccc;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.cont-imagen{
+    flex: 1;
+    border: solid 1px #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+.imagen-proyecto{
+    width: 85%;
+    height: 85%;
+}
+
+.cont-info{
+    flex: 2;
+    border: solid 1px #ccc;
+}
+
+.nombre-proyecto{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    margin: 0px;
+    margin-top: 30px;
+    margin-left: 20px;
+    border: solid 1px #ccc;
+    color: var(--color-letra);
+
+}
+
+.creacion-proyecto{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: aliceblue;;
+    margin: 0;
+    margin-left: 20px;
+    font-weight: normal;
+    border: solid 1px #ccc;
+
+}
+
+.descripcion-proyecto{
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    margin-left: 20px;
+    font-size: 22px;
+    margin-right: 20px;
+    border: solid 1px #ccc;
+
+}
+
+.lenguajes-proyecto{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    color: aliceblue;
+    margin-left: 20px;
+    border: solid 1px #ccc;
+
+}
+
+.cont-botones{
+    /* border: solid 1px #ccc; */
+    margin-left: 20px;
+    position: relative;
+    bottom: -120px;
+}
+
+.boton-proyecto{
+    height: 52px;
+    width: 180px;
+    margin-right: 20px;
+    border-radius: 40px;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+#btnModificar{
+    /* background-color: rgba(5, 54, 180, 0.700); */
+    background-color: transparent;
+    border: solid 2px #47a3ff;
+    transition: 0.4s;
+}
+
+#btnModificar:hover{
+    background-color: rgba(58, 166, 255, 0.911);
+    border: solid 2px  rgba(58, 166, 255, 0.911);
+    transition: 0.4s;
+
+}
+
+#btnEliminar{
+    /* background-color: rgba(206, 32, 32, 0.700); */
+    background-color: transparent;
+    border: solid 2px #ff1f1f;
+    transition: 0.4s;
+    text-decoration: none;
+    display: inline-block;;
+}
+
+#btnEliminar:hover{
+    background-color: rgba(236, 39, 39, 0.89);
+    border: solid 2px #ce2020b3;
+    transition: 0.4s;
+
+}

@@ -1,0 +1,85 @@
+
+/* Estilos contenedor principal */
+.contenedor{
+    border: none;
+    height: auto;
+    margin: 30px;
+}
+
+.cont-formulario-contacto{
+    border: solid 4px var(--color-letra);
+    padding: 10px 20px;
+    width: 40%;
+}
+
+.cont-formulario-titulo{
+    margin: 10px 0px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--color-letra);
+}
+
+.formulario-contacto{
+    border: none;
+}
+
+.cont-campos{
+    display: block;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.formulario-contacto label{
+    display: block;
+    color: var(--color-letra);
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.formulario-contacto input[type="text"]{
+    height: 25px;
+    padding: 5px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    width: calc(100% - 10px);
+    background-color: rgba(0, 0, 0, 0.4);
+    border: solid 2px var(--color-letra);
+    color: white;
+}
+
+.formulario-contacto textarea{
+    min-width: calc(100% - 10px);
+    max-width: calc(100% - 10px);
+    min-height: 200px;
+    max-height: 200px;
+    padding: 5px;
+    font-size: 18px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: solid 2px var(--color-letra);
+    color: white;
+}
+
+.formulario-contacto-btn{
+    padding: 8px;
+    height: 45px;
+    width: 150px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    border: solid 3px var(--color-letra);
+    background-color: transparent;
+    color: var(--color-letra);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.formulario-contacto-btn:hover{
+    background-color: var(--color-letra);
+    color: white;
+    transition: 0.5s;
+    border: solid 3px transparent;
+}
